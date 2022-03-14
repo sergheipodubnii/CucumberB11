@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features/com.etsy",
         glue="stepdefinitions/etsysteps",
         dryRun = false,
-        tags="@regression and @smoke"
+        tags="@regressionoutline"
 )
 
 public class EtsyRunner {

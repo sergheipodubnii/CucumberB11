@@ -28,12 +28,11 @@ public class HookEtsy {
         if(scenario.isFailed()){
             File screenshotFile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
             try {
-                FileUtils.copyFile(screenshotFile, new File(new File("src/test/java/screenshot/" + screenshotfileName) + "png"));
+                FileUtils.copyFile(screenshotFile, new File(new File("src/test/java/screenshot/" + screenshotfileName) + ".png"));
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
-        driver.quit();
-        driver=null;
+       Driver.tearDown();
     }
 }

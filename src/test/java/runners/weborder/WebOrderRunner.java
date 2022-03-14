@@ -17,7 +17,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features/com.weborder",// this is path for feature files
         glue = "stepdefinitions/webordersteps", //this is path for step definitions
         dryRun = false,
-        tags ="@smoke and @regression and @ahmet and not @tc1"
+        tags ="@smokeLoginTest"
 
 )
 
